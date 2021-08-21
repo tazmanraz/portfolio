@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   menuSliderContainer: {
     width: 250,
     background: "red",
-    height: "30rem"
+    height: "100%"
   },
   avatar: {
     display: "block",
@@ -55,7 +55,11 @@ const Navbar = () => {
   const classes = useStyles();
 
   const sideBar = slider =>(
-    <Box className={classes.menuSliderContainer} component="div">
+    <Box 
+    className={classes.menuSliderContainer} 
+    component="div"
+    onClick={toggleSlider(slider, false)}
+    >
     <Avatar className={classes.avatar} src={avatar} alt="mylogo" />
     <Divider />
     <List>
@@ -83,7 +87,11 @@ const Navbar = () => {
             <Typography variant="h5" style={{ color: "tan" }}>
               Imtiaz
             </Typography>
-            <Drawer anchor="right" open={state.right}>
+            <Drawer 
+            anchor="right" 
+            open={state.right}
+            onClose={toggleSlider("right", false)}
+            >
               {sideBar("right")}
             </Drawer>
           </Toolbar>
