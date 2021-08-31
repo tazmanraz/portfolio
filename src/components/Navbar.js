@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 import { AppBar, Toolbar, ListItem, IconButton, ListItemText, ListItemIcon, Avatar, Divider, List, Typography, Box, Drawer } from "@material-ui/core"
 import { Dehaze, AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
 import { makeStyles } from '@material-ui/core/styles';
@@ -27,11 +28,13 @@ const useStyles = makeStyles(theme => ({
 const menuItems = [
   {
     listIcon: <Home />,
-    listText: "Home"
+    listText: "Home",
+    listPath: "/"
   },
   {
     listIcon: <AssignmentInd />,
-    listText: "Resume"
+    listText: "Resume",
+    listPath: "/resume"
   },
   {
     listIcon: <Apps />,
@@ -64,7 +67,7 @@ const Navbar = () => {
     <Divider />
     <List>
       {menuItems.map((lsItem, key) => (
-        <ListItem button key={key}>
+        <ListItem button key={key} component={Link} to={lsItem.listPath}>
           <ListItemIcon className={classes.listItem}>
             {lsItem.listIcon}
           </ListItemIcon>
