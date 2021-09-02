@@ -4,6 +4,7 @@ import { AppBar, Toolbar, ListItem, IconButton, ListItemText, ListItemIcon, Avat
 import { Dehaze, AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
 import { makeStyles } from '@material-ui/core/styles';
 import avatar from "../images/logo.svg"
+import Footer from './Footer';
 
 
 // Main styling for portfolio avatar area
@@ -98,6 +99,7 @@ const Navbar = () => {
             onClose={toggleSlider("right", false)}
             >
               {sideBar("right")}
+              <Footer />
             </Drawer>
           </Toolbar>
         </AppBar>
