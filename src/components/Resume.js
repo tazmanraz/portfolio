@@ -2,6 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Box } from '@material-ui/core'
 import Navbar from './Navbar'
+import {Route, Link, Redirect} from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
@@ -103,47 +104,48 @@ const useStyles = makeStyles(theme => ({
 const Resume = () => {
   const classes = useStyles();
   return (
-    <>
-      <Navbar />
-      <Box component="header" className={classes.mainContainer}>
-        <Typography variant="h4" align="center" className={classes.heading}>
-          Working Expeirence
-        </Typography>
-        <Box component="div" className={classes.timeLine}>
-          <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineitem}`}>
-            2021
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography variant="h5" align="center" className={classes.subHeading}>
-              web design
-            </Typography>
-            <Typography variant="body1" align="center" style={{color:"tomato"}}>
-              Matrix
-            </Typography>
-            <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
-              herp derp
-            </Typography>
-          </Box>
+    // <>
+    //   <Navbar />
+    //   <Box component="header" className={classes.mainContainer}>
+    //     <Typography variant="h4" align="center" className={classes.heading}>
+    //       Working Expeirence
+    //     </Typography>
+    //     <Box component="div" className={classes.timeLine}>
+    //       <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineitem}`}>
+    //         2021
+    //       </Typography>
+    //       <Box component="div" className={classes.timeLineItem}>
+    //         <Typography variant="h5" align="center" className={classes.subHeading}>
+    //           web design
+    //         </Typography>
+    //         <Typography variant="body1" align="center" style={{color:"tomato"}}>
+    //           Matrix
+    //         </Typography>
+    //         <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
+    //           herp derp
+    //         </Typography>
+    //       </Box>
           
-          <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineitem}`}>
-            2022
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography variant="h5" align="center" className={classes.subHeading}>
-              web design
-            </Typography>
-            <Typography variant="body1" align="center" style={{color:"tomato"}}>
-              Matrix
-            </Typography>
-            <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
-              herp derp
-            </Typography>
-          </Box>
+    //       <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineitem}`}>
+    //         2022
+    //       </Typography>
+    //       <Box component="div" className={classes.timeLineItem}>
+    //         <Typography variant="h5" align="center" className={classes.subHeading}>
+    //           web design
+    //         </Typography>
+    //         <Typography variant="body1" align="center" style={{color:"tomato"}}>
+    //           Matrix
+    //         </Typography>
+    //         <Typography variant="subtitle1" align="center" style={{color:"tan"}}>
+    //           herp derp
+    //         </Typography>
+    //       </Box>
 
           
-        </Box>
-      </Box>
-    </>
+    //     </Box>
+    //   </Box>
+    // </>
+    <Redirect to="/portfolio" />
   )
 }
 

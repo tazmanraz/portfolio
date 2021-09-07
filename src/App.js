@@ -4,7 +4,7 @@ import './App.css';
 import Home from "./components"
 import Resume from "./components/Resume"
 import Portfolio from "./components/Portfolio"
-import {Route} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 import Contacts from "./components/Contacts"
 
 function App() {
