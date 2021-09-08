@@ -11,7 +11,7 @@ import Footer from './Footer';
 const useStyles = makeStyles(theme => ({
   menuSliderContainer: {
     width: 250,
-    background: "tomato",
+    background: "#314E52",
     height: "100%"
   },
   avatar: {
@@ -42,11 +42,11 @@ const menuItems = [
     listText: "Portfolio",
     listPath: "/portfolio"
   },
-  {
-    listIcon: <ContactMail />,
-    listText: "Contacts",
-    listPath: "/contacts"
-  }
+  // {
+  //   listIcon: <ContactMail />,
+  //   listText: "Contacts",
+  //   listPath: "/contacts"
+  // }
 ]
 
 const Navbar = () => {
