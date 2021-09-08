@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography } from "@material-ui/core"
 import { makeStyles } from '@material-ui/core/styles';
 import Navbar from './Navbar'
-import project1 from "../images/images/html-css-javascript-lg.jpg"
+import project1 from "../images/images/Capture1.PNG"
 import project2 from "../images/images/html-css-javascript.jpg"
 //import classes from "*.module.css";
 
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 const Portfolio = () => {
   const classes= useStyles();
   return (
-    <Box component="div" className={classes.mainContainer}>
+    <Box component="div" className={classes.mainContainer} style={{background: "#233", height: "100vh"}}>
       <Navbar />
       <Grid container justify="center">
         {/* Project 1 */}
@@ -33,19 +33,18 @@ const Portfolio = () => {
               <CardMedia component="img" alt="Project 1" height="140" image={project1}/>
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project1
+                  Bookify
                 </Typography>
-                <Typography variant="body2" colot="textSecondary" component="p">
-                  lorem ipsum fsfsdfds fsfdsdfa  adsas fgfaa
-                  adasdadassda
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A book keeping web app with a special feature of extracting expenses automatically from your camera
                 </Typography>
               </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href="https://github.com/tazmanraz/Bookify" target="_blank">
                   Share
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href="https://www.youtube.com/watch?v=DpS8RdKg_Po" target="_blank">
                   Live Demo
                 </Button>
               </CardActions>

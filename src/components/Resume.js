@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Box } from '@material-ui/core'
 import Navbar from './Navbar'
 import {Route, Link, Redirect} from 'react-router-dom';
+import resume from '../images/resume.pdf'
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
@@ -145,7 +146,34 @@ const Resume = () => {
     //     </Box>
     //   </Box>
     // </>
-    <Redirect to="/portfolio" />
+    // <Redirect to="/portfolio" />
+
+
+  //   <div>
+  //   <object
+  //     data='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
+  //     type="application/pdf"
+  //     width="max-width"
+
+  //   >
+
+  //     <iframe
+  //       src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
+  //       width="max-width"
+
+  //     >
+  //     <p>This browser does not support PDF!</p>
+  //     </iframe>
+
+  //   </object>
+  // </div>
+
+  <Box component="div" style={{background: "#233", height: "100vh"}}>
+  <Navbar />
+  <iframe src={resume} width="100%" height="100%">
+  </iframe>
+  </Box>
+  
   )
 }
 
