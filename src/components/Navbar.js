@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import { AppBar, Toolbar, ListItem, IconButton, ListItemText, ListItemIcon, Avatar, Divider, List, Typography, Box, Drawer } from "@material-ui/core"
 import { Dehaze, AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
+import WorkIcon from '@material-ui/icons/Work';
 import { makeStyles } from '@material-ui/core/styles';
 import avatar from "../images/logo.svg"
 import Footer from './Footer';
@@ -33,7 +34,7 @@ const menuItems = [
     listPath: "/"
   },
   {
-    listIcon: <AssignmentInd />,
+    listIcon: <WorkIcon />,
     listText: "Resume",
     listPath: "/resume"
   },
@@ -42,6 +43,11 @@ const menuItems = [
     listText: "Portfolio",
     listPath: "/portfolio"
   },
+  // {
+  //   listIcon: <AssignmentInd />,
+  //   listText: "About",
+  //   listPath: "/about"
+  // },
   // {
   //   listIcon: <ContactMail />,
   //   listText: "Contacts",

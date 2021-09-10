@@ -6,6 +6,7 @@ import Resume from "./components/Resume"
 import Portfolio from "./components/Portfolio"
 import {Route, Link} from 'react-router-dom';
 import Contacts from "./components/Contacts"
+import About from "./components/About"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/resume" component={Resume} />
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/contacts" component={Contacts} />
+      <Route path="/about" component={About} />
     </>
   );
 }

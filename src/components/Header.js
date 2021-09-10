@@ -7,15 +7,15 @@ import Typed from "react-typed";
 
 const useStyles = makeStyles(theme => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(30),
+    height: theme.spacing(30),
     margin: theme.spacing(1)
   },
   title: {
-    color: "tomato"
+    color: "#BE0000"
   },
   subtitle: {
-    color: "tan",
+    color: "#E8E8E8",
     marginBottom: "3rem"
   },
   typedContainer: {
@@ -36,12 +36,12 @@ const Header = () => {
     <Grid container justify="center">
       <Avatar className={classes.avatar} src={avatar} alt="mylogo" />
       </Grid>
-      <Typography className={classes.title} variant="h4">
+      <Typography className={classes.title} variant="h3">
         <Typed strings={["Imtiaz Miah"]} typeSpeed={40} />
       </Typography>
       <br/>
-      <Typography className={classes.subtitle} variant="h5">
-        <Typed strings={["Full Stack Development", "Photography", "Blog"]} 
+      <Typography className={classes.subtitle} variant="h4">
+        <Typed strings={["Full Stack Development", "Photography", "Teacher"]} 
         typeSpeed={40} 
         backSpeed={60}
         loop  
