@@ -7,9 +7,9 @@ import Typed from "react-typed";
 
 const useStyles = makeStyles(theme => ({
   avatar: {
-    width: theme.spacing(30),
-    height: theme.spacing(30),
-    margin: theme.spacing(1)
+    width: theme.spacing(27),
+    height: theme.spacing(27),
+    margin: theme.spacing(2)
   },
   title: {
     color: "#BE0000"
